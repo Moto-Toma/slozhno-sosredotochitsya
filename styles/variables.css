@@ -6,3 +6,38 @@
 :root {
   --main-font: 'IBM Plex mono';
 }
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --text-color: #353430;
+    --title-color: #ffc2e6;
+    --title-shadow: #ff8dcb;
+    --bg-color: #fff1f7;
+    --hover-color:  1px solid rgba(50, 49, 45, 0.4);
+    --bg-image: url(../images/cover-image-light.png);
+    --section-title-color: var(--text-color);
+    --section-subtitle-color: var(--text-color);
+    --decor-color: var(--title-shadow);
+    --link-shadow: var(--title-shadow);
+    --rec-color: transparent;
+    --corners-color: var(--title-shadow);
+  }
+}
+  
+@media (prefers-color-scheme: dark) {
+  :root {
+    --text-color: #f1b2ce;
+    --title-color: #db00ff;
+    --title-shadow: #ff0070;
+    --bg-color: #000028;
+    --hover-color:  1px solid rgba(255, 0, 112, 0.4);
+    --bg-image: url(../images/cover-image-dark.png);
+    --section-title-color: var(--title-shadow);
+    --section-subtitle-color: var(--bg-color);
+    --decor-color: var(--title-shadow);
+    --link-shadow: var(--title-shadow);
+    --rec-color: var(--title-shadow);
+    --corners-color: var(--title-shadow);
+  }
+}
+
