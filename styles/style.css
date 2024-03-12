@@ -1,5 +1,208 @@
-/* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
+:root {
+  --main-font: 'IBM Plex mono';
+}
 
 .page {
-  /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
+  background-image: var(--bg-image);
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: var(--bg-color);
+  background-attachment: fixed;
+  color: var(--text-color);
+  font-family: var(--main-font); 
+  min-inline-size: 375px;
+  margin: 0;
 }
+
+.header {
+  padding: 10px;
+  position: relative;
+}
+
+.rec-icon {
+  position: absolute;
+  color: var(--rec-color);
+  text-transform: uppercase;
+  top: 12px;
+  right: 40px;
+}
+
+.rec-icon::after {
+  content: '';
+  position: absolute;
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  box-shadow: 0px 0px 4px 2px var(--rec-color);
+  background-color: var(--rec-color);
+  top: 50%;
+  right: 0;
+  margin: -5px -20px 0 0;
+}
+
+.header__theme-menu {
+  padding-top: 65px;
+}
+
+.header__theme-menu-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: end;
+  gap: 14px;
+}
+
+.header__theme-menu-button {
+  font-size: 18px;
+  font-weight: 400;
+  color: var(--title-shadow);
+  line-height: 100%;
+  padding: 2px 12px;
+  border: transparent;
+  background-color: transparent;
+  cursor: pointer;
+  text-transform: lowercase;
+}
+
+.header__theme-menu-button:hover {
+  border: var(--hover-color);
+}
+
+.header__theme-menu-button:focus {
+  border: none;
+}
+
+.header__theme-menu-button:focus-visible {
+  border-bottom: 1px solid var(--title-shadow);
+}
+
+.header__theme-menu-button_active {
+  border: 1px solid var(--title-shadow);
+}
+
+.header__title-container {
+  padding: 68px 0 56px;
+  display: flex;
+  flex-direction: column;
+  gap: 55px;
+}
+
+.header__title {
+  font-size: clamp(7.25rem, 5.7694rem + 6.3174vw, 9.8125rem);
+  font-weight: 700;
+  color: var(--title-color);
+  text-shadow: 4px 4px 0 var(--title-shadow);
+  line-height: 82.5%;
+}
+
+.header__text {
+  color: var(--bg-color);
+  font-weight: 700;
+  line-height: 23.4px;
+  letter-spacing: 1.3px;
+  background-color: var(--title-shadow);
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  padding: 0 10px;
+  margin-top: 40px;
+}
+
+.section__title {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--section-title-color);
+}
+
+.section__subtitle {
+  font-size: 18px;
+  font-weight: 700;
+  background-color: var(--title-shadow);
+  color: var(--section-subtitle-color);
+  margin-top: 20px;
+}
+
+.section__text {
+  margin-top: 10px;
+  line-height: 146%;
+  letter-spacing: 1.3px;
+}
+
+.section__text-link {
+  text-shadow: 3px 3px 0 var(--link-shadow);
+  text-decoration: none;
+}
+
+.section__text-link:hover {
+  border-bottom: 1px solid var(--text-color);
+}
+
+.section__text-link:focus {
+  outline: none;
+}
+
+.section__text-link:focus-visible {
+  outline: 1px solid var(--text-color);
+}
+
+.section__text-title {
+  font-weight: 400;
+}
+
+.gallery__list {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.gallery__title {
+  margin: 1px
+}
+
+.gallery__img {
+  inline-size: 100%;
+  display: block;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  padding: 257px 0;
+  position: relative;
+  margin-top: 43px;
+}
+
+.footer__text {
+  font-size: clamp(7.25rem, 5.7694rem + 6.3174vw, 9.8125rem);
+  font-weight: 700;
+  color: var(--title-color);
+  text-shadow: 2px 2px 0 var(--title-shadow);
+}
+
+.decorated-zone::before {
+  content: '';
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  top: 9px;
+  right: 9px;
+  border-right: 1px solid var(--corners-color);
+  border-top: 1px solid var(--corners-color);
+}
+
+.decorated-zone::after {
+  content: '';
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  bottom: 10px;
+  left: 11px;
+  border-left: 1px solid var(--corners-color);
+  border-bottom: 1px solid var(--corners-color);
+}
+
