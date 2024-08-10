@@ -40,3 +40,8 @@ a {
   font-size: inherit;
   line-height: inherit;
 }
+
+article {
+  margin: 0;
+  padding: 0;
+}

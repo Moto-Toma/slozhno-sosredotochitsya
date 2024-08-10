@@ -14,10 +14,10 @@
     --bg-image: url(../images/cover-image-light.png);
     --section-title-color: var(--text-color);
     --section-subtitle-color: var(--text-color);
-    --decor-color: var(--title-shadow);
-    --link-shadow: var(--title-shadow);
+    --decor-color: var(--text-color);
+    --link-shadow: var(--text-color);
     --rec-color: transparent;
-    --corners-color: var(--title-shadow);
+    --corners-color: var(--text-color);
     --header-text-color: var(--text-color);
   }
   

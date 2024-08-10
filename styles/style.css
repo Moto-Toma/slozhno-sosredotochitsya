@@ -1,5 +1,5 @@
 :root {
-  --main-font: "IBM Plex mono";
+  --main-font: "IBM Plex mono", monospace;
 }
 
 .page {
@@ -10,7 +10,7 @@
   background-color: var(--bg-color, #000028);
   background-attachment: fixed;
   color: var(--text-color, #f1b2ce);
-  font-family: var(--main-font, sans-serif);
+  font-family: var(--main-font, monospace);
   min-inline-size: 375px;
   margin: 0;
 }
@@ -56,7 +56,7 @@
 .header__theme-menu-button {
   font-size: 18px;
   font-weight: 400;
-  color: var(--title-shadow);
+  color: var(--text-color);
   line-height: 100%;
   padding: 2px 12px;
   border: transparent;
@@ -74,11 +74,11 @@
 }
 
 .header__theme-menu-button:focus-visible {
-  border-bottom: 1px solid var(--title-shadow);
+  border-bottom: 1px solid var(--text-color);
 }
 
 .header__theme-menu-button_active {
-  border: 1px solid var(--title-shadow);
+  border: 1px solid var(--text-color);
 }
 
 .header__title-container {
@@ -134,7 +134,7 @@
 .section__text {
   margin-top: 10px;
   line-height: 146%;
-  letter-spacing: 1.3px;
+  letter-spacing: 1.2px;
 }
 
 .section__text-link {
